@@ -1,6 +1,11 @@
 /*!
+<<<<<<< HEAD
+ * Bootstrap v3.3.1 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+=======
  * Bootstrap v3.3.4 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
+>>>>>>> gh-pages
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
@@ -2603,21 +2608,29 @@ input[type="search"] {
   input[type="date"].input-sm,
   input[type="time"].input-sm,
   input[type="datetime-local"].input-sm,
+<<<<<<< HEAD
+  input[type="month"].input-sm {
+=======
   input[type="month"].input-sm,
   .input-group-sm input[type="date"],
   .input-group-sm input[type="time"],
   .input-group-sm input[type="datetime-local"],
   .input-group-sm input[type="month"] {
+>>>>>>> gh-pages
     line-height: 30px;
   }
   input[type="date"].input-lg,
   input[type="time"].input-lg,
   input[type="datetime-local"].input-lg,
+<<<<<<< HEAD
+  input[type="month"].input-lg {
+=======
   input[type="month"].input-lg,
   .input-group-lg input[type="date"],
   .input-group-lg input[type="time"],
   .input-group-lg input[type="datetime-local"],
   .input-group-lg input[type="month"] {
+>>>>>>> gh-pages
     line-height: 46px;
   }
 }
@@ -4355,7 +4368,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-top-right-radius: 0;
 }
 .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+<<<<<<< HEAD
+=======
   margin-bottom: 0;
+>>>>>>> gh-pages
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 0;
@@ -5769,10 +5785,9 @@ button.close {
           box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
 }
 .modal-backdrop {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
-  bottom: 0;
   left: 0;
   z-index: 1040;
   background-color: #000;

@@ -1,6 +1,11 @@
 /*!
+<<<<<<< HEAD
+ * Bootstrap v3.3.1 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+=======
  * Bootstrap v3.3.4 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
+>>>>>>> gh-pages
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
@@ -17,7 +22,11 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
+<<<<<<< HEAD
+ * Bootstrap: transition.js v3.3.1
+=======
  * Bootstrap: transition.js v3.3.4
+>>>>>>> gh-pages
  * http://getbootstrap.com/javascript/#transitions
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
@@ -77,7 +86,11 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
+<<<<<<< HEAD
+ * Bootstrap: alert.js v3.3.1
+=======
  * Bootstrap: alert.js v3.3.4
+>>>>>>> gh-pages
  * http://getbootstrap.com/javascript/#alerts
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
@@ -96,7 +109,11 @@ if (typeof jQuery === 'undefined') {
     $(el).on('click', dismiss, this.close)
   }
 
+<<<<<<< HEAD
+  Alert.VERSION = '3.3.1'
+=======
   Alert.VERSION = '3.3.4'
+>>>>>>> gh-pages
 
   Alert.TRANSITION_DURATION = 150
 
@@ -172,7 +189,11 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
+<<<<<<< HEAD
+ * Bootstrap: button.js v3.3.1
+=======
  * Bootstrap: button.js v3.3.4
+>>>>>>> gh-pages
  * http://getbootstrap.com/javascript/#buttons
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
@@ -192,7 +213,11 @@ if (typeof jQuery === 'undefined') {
     this.isLoading = false
   }
 
+<<<<<<< HEAD
+  Button.VERSION  = '3.3.1'
+=======
   Button.VERSION  = '3.3.4'
+>>>>>>> gh-pages
 
   Button.DEFAULTS = {
     loadingText: 'loading...'
@@ -289,7 +314,11 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
+<<<<<<< HEAD
+ * Bootstrap: carousel.js v3.3.1
+=======
  * Bootstrap: carousel.js v3.3.4
+>>>>>>> gh-pages
  * http://getbootstrap.com/javascript/#carousel
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
@@ -320,7 +349,11 @@ if (typeof jQuery === 'undefined') {
       .on('mouseleave.bs.carousel', $.proxy(this.cycle, this))
   }
 
+<<<<<<< HEAD
+  Carousel.VERSION  = '3.3.1'
+=======
   Carousel.VERSION  = '3.3.4'
+>>>>>>> gh-pages
 
   Carousel.TRANSITION_DURATION = 600
 
@@ -527,7 +560,11 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
+<<<<<<< HEAD
+ * Bootstrap: collapse.js v3.3.1
+=======
  * Bootstrap: collapse.js v3.3.4
+>>>>>>> gh-pages
  * http://getbootstrap.com/javascript/#collapse
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
@@ -557,7 +594,11 @@ if (typeof jQuery === 'undefined') {
     if (this.options.toggle) this.toggle()
   }
 
+<<<<<<< HEAD
+  Collapse.VERSION  = '3.3.1'
+=======
   Collapse.VERSION  = '3.3.4'
+>>>>>>> gh-pages
 
   Collapse.TRANSITION_DURATION = 350
 
@@ -739,7 +780,11 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
+<<<<<<< HEAD
+ * Bootstrap: dropdown.js v3.3.1
+=======
  * Bootstrap: dropdown.js v3.3.4
+>>>>>>> gh-pages
  * http://getbootstrap.com/javascript/#dropdowns
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
@@ -759,7 +804,11 @@ if (typeof jQuery === 'undefined') {
     $(element).on('click.bs.dropdown', this.toggle)
   }
 
+<<<<<<< HEAD
+  Dropdown.VERSION = '3.3.1'
+=======
   Dropdown.VERSION = '3.3.4'
+>>>>>>> gh-pages
 
   Dropdown.prototype.toggle = function (e) {
     var $this = $(this)
@@ -901,7 +950,11 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
+<<<<<<< HEAD
+ * Bootstrap: modal.js v3.3.1
+=======
  * Bootstrap: modal.js v3.3.4
+>>>>>>> gh-pages
  * http://getbootstrap.com/javascript/#modals
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
@@ -935,7 +988,11 @@ if (typeof jQuery === 'undefined') {
     }
   }
 
+<<<<<<< HEAD
+  Modal.VERSION  = '3.3.1'
+=======
   Modal.VERSION  = '3.3.4'
+>>>>>>> gh-pages
 
   Modal.TRANSITION_DURATION = 300
   Modal.BACKDROP_TRANSITION_DURATION = 150
@@ -986,6 +1043,10 @@ if (typeof jQuery === 'undefined') {
         .show()
         .scrollTop(0)
 
+<<<<<<< HEAD
+      if (that.options.backdrop) that.adjustBackdrop()
+=======
+>>>>>>> gh-pages
       that.adjustDialog()
 
       if (transition) {
@@ -1139,9 +1200,22 @@ if (typeof jQuery === 'undefined') {
   // these following methods are used to handle overflowing modals
 
   Modal.prototype.handleUpdate = function () {
+<<<<<<< HEAD
+    if (this.options.backdrop) this.adjustBackdrop()
     this.adjustDialog()
   }
 
+  Modal.prototype.adjustBackdrop = function () {
+    this.$backdrop
+      .css('height', 0)
+      .css('height', this.$element[0].scrollHeight)
+  }
+
+=======
+    this.adjustDialog()
+  }
+
+>>>>>>> gh-pages
   Modal.prototype.adjustDialog = function () {
     var modalIsOverflowing = this.$element[0].scrollHeight > document.documentElement.clientHeight
 
@@ -1159,18 +1233,25 @@ if (typeof jQuery === 'undefined') {
   }
 
   Modal.prototype.checkScrollbar = function () {
+<<<<<<< HEAD
+    this.bodyIsOverflowing = document.body.scrollHeight > document.documentElement.clientHeight
+=======
     var fullWindowWidth = window.innerWidth
     if (!fullWindowWidth) { // workaround for missing window.innerWidth in IE8
       var documentElementRect = document.documentElement.getBoundingClientRect()
       fullWindowWidth = documentElementRect.right - Math.abs(documentElementRect.left)
     }
     this.bodyIsOverflowing = document.body.clientWidth < fullWindowWidth
+>>>>>>> gh-pages
     this.scrollbarWidth = this.measureScrollbar()
   }
 
   Modal.prototype.setScrollbar = function () {
     var bodyPad = parseInt((this.$body.css('padding-right') || 0), 10)
+<<<<<<< HEAD
+=======
     this.originalBodyPad = document.body.style.paddingRight || ''
+>>>>>>> gh-pages
     if (this.bodyIsOverflowing) this.$body.css('padding-right', bodyPad + this.scrollbarWidth)
   }
 
@@ -1241,7 +1322,11 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
+<<<<<<< HEAD
+ * Bootstrap: tooltip.js v3.3.1
+=======
  * Bootstrap: tooltip.js v3.3.4
+>>>>>>> gh-pages
  * http://getbootstrap.com/javascript/#tooltip
  * Inspired by the original jQuery.tipsy by Jason Frame
  * ========================================================================
@@ -1267,7 +1352,11 @@ if (typeof jQuery === 'undefined') {
     this.init('tooltip', element, options)
   }
 
+<<<<<<< HEAD
+  Tooltip.VERSION  = '3.3.1'
+=======
   Tooltip.VERSION  = '3.3.4'
+>>>>>>> gh-pages
 
   Tooltip.TRANSITION_DURATION = 150
 
@@ -1718,7 +1807,11 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
+<<<<<<< HEAD
+ * Bootstrap: popover.js v3.3.1
+=======
  * Bootstrap: popover.js v3.3.4
+>>>>>>> gh-pages
  * http://getbootstrap.com/javascript/#popovers
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
@@ -1738,7 +1831,11 @@ if (typeof jQuery === 'undefined') {
 
   if (!$.fn.tooltip) throw new Error('Popover requires tooltip.js')
 
+<<<<<<< HEAD
+  Popover.VERSION  = '3.3.1'
+=======
   Popover.VERSION  = '3.3.4'
+>>>>>>> gh-pages
 
   Popover.DEFAULTS = $.extend({}, $.fn.tooltip.Constructor.DEFAULTS, {
     placement: 'right',
@@ -1827,7 +1924,11 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
+<<<<<<< HEAD
+ * Bootstrap: scrollspy.js v3.3.1
+=======
  * Bootstrap: scrollspy.js v3.3.4
+>>>>>>> gh-pages
  * http://getbootstrap.com/javascript/#scrollspy
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
@@ -1856,7 +1957,11 @@ if (typeof jQuery === 'undefined') {
     this.process()
   }
 
+<<<<<<< HEAD
+  ScrollSpy.VERSION  = '3.3.1'
+=======
   ScrollSpy.VERSION  = '3.3.4'
+>>>>>>> gh-pages
 
   ScrollSpy.DEFAULTS = {
     offset: 10
@@ -2000,7 +2105,11 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
+<<<<<<< HEAD
+ * Bootstrap: tab.js v3.3.1
+=======
  * Bootstrap: tab.js v3.3.4
+>>>>>>> gh-pages
  * http://getbootstrap.com/javascript/#tabs
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
@@ -2018,7 +2127,11 @@ if (typeof jQuery === 'undefined') {
     this.element = $(element)
   }
 
+<<<<<<< HEAD
+  Tab.VERSION = '3.3.1'
+=======
   Tab.VERSION = '3.3.4'
+>>>>>>> gh-pages
 
   Tab.TRANSITION_DURATION = 150
 
@@ -2154,7 +2267,11 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
+<<<<<<< HEAD
+ * Bootstrap: affix.js v3.3.1
+=======
  * Bootstrap: affix.js v3.3.4
+>>>>>>> gh-pages
  * http://getbootstrap.com/javascript/#affix
  * ========================================================================
  * Copyright 2011-2015 Twitter, Inc.
@@ -2183,7 +2300,11 @@ if (typeof jQuery === 'undefined') {
     this.checkPosition()
   }
 
+<<<<<<< HEAD
+  Affix.VERSION  = '3.3.1'
+=======
   Affix.VERSION  = '3.3.4'
+>>>>>>> gh-pages
 
   Affix.RESET    = 'affix affix-top affix-bottom'
 
