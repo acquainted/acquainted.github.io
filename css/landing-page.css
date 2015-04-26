@@ -187,3 +187,11 @@ img.logo {
 .navbar {
     background-color:#315260;
 }
+
+.navbar-default {
+  border: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
+}
