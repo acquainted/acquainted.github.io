@@ -193,3 +193,7 @@ img.logo {
 .navbar-default .navbar-nav>li>a:Hover {
     color:#FF9800;
 }
+
+.navbar-default {
+  border: none;
+}
