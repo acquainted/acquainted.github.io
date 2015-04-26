@@ -197,3 +197,8 @@ img.logo {
 .navbar-default {
   border: none;
 }
+
+.subheading {
+    font-weight:600;
+    font-size:1.5em;
+}
